@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form contact</title>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left-side">
+            <a href="index.html"><img src="assets/IMG/logo.png" alt="logo dumbways"></a>
+            <ul>
+                <li><a class="list-active" href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- === FORM === -->
+    <div class="container-form">
+        <form action="">
+
+            <h1 style="display: flex; justify-content: center;">GET IN TOUCH</h1>
+            <div>
+                <label for="input-name">Name</label>
+                <input id="input-name" type="text">
+            </div>
+
+            <div>
+                <label for="input-email">Email</label>
+                <input id="input-email" type="email">
+            </div>
+
+            <div>
+                <label for="input-phone">Phone Number</label>
+                <input id="input-phone" type="tel">
+            </div>
+
+            <div>
+                <label for="input-subject">Subject</label>
+                <select id="input-subject">
+                    <option hidden></option>
+                    <option>Let's Talk</option>
+                    <option>Let's Collaboration</option>
+                    <option>I am Hiring</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="input-message">Your Message</label>
+                <textarea id="input-message"></textarea>
+            </div>
+
+            <button type="button" onclick="getData()">Submit</button>
+
+        </form>
+    </div>
+    <!-- === END FORM === -->
+
+
+    <!-- EXTERNAL JS -->
+    <script src="assets/JS/index.js"></script>
+</body>
+</html>

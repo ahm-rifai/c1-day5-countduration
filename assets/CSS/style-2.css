@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
+
+  /* === NAVBAR === */
+  nav {
+    background: #f4f3f3;
+    display: flex;
+    height: 7vh;
+  }
+
+  nav div {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex: 50%;
+  }
+
+  nav .left-side {
+    /* background-color: yellow; */
+    padding-left: 90px;
+  }
+
+  nav .left-side a img {
+    display: flex;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin-left: 40px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-left: 40px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul li a.list-active {
+    color: black;
+    font-weight: 700;
+  }
+
+  nav .right-side {
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+  }
+
+nav .right-side a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 14px;
+    background-color: #151d31;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+nav .right-side a:hover {
+    background-color: black;
+  }
+
+
+  /* === FORM PROJECT === */
+  .container-1 {
+    background-color: #E3E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    /* height: 93vh; */
+  }
+
+  .container-1 .container-form {
+    /* background-color: yellow; */
+    width: 30%;
+  }
+
+  .container-1 h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  input, textarea, .container-1 .container-form .img-project .input-image label {
+    /* background-color: red; */
+    box-shadow: 0px 5px 5px 0px rgb(185, 185, 185);
+    border: 1px solid rgb(202, 202, 202);
+    padding: 4px 4px 4px 8px;
+  }
+
+  .container-1 .container-form .title-project {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .container-1 .container-form .title-project input {
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 223, 223);
+  }
+
+  .container-1 .container-form .date-project {
+    /* background-color: red; */
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    display: flex;
+  }
+
+  .container-1 .container-form .date-project .start-date {
+    /* background-color: red; */
+    padding-right: 8px;
+    width: 50%;
+  }
+
+  .container-1 .container-form .date-project .end-date {
+    /* background-color: white; */
+    padding-left: 8px;
+    width: 50%;
+  }
+
+  .container-1 .container-form .date-project input {
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 223, 223);
+  }
+
+  .container-1 .container-form .desc-project {
+    /* background-color: red; */
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  .container-1 .container-form .desc-project textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 223, 223);
+  }
+
+  .container-1 .container-form .tech-project {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .container-1 .container-form .tech-project .left-checkbox label {
+    margin-left: 10px;
+  }
+
+  .container-1 .container-form .tech-project .right-checkbox label {
+    margin-left: 10px;
+  }
+
+  .container-1 .container-form .tech-project .left-checkbox {
+    /* background-color: red; */
+    width: 40%;
+    margin-top: 10px;
+    color: rgb(110, 110, 110);
+  }
+
+  .container-1 .container-form .tech-project .right-checkbox {
+    /* background-color: red; */
+    width: 40%;
+    margin-top: -60px;
+    margin-left: 200px;
+    color: rgb(110, 110, 110);
+  }
+
+  .img-project {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+
+  .img-project p {
+    display: flex;
+    font-size: 18px;
+    color: rgb(116, 116, 116);
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    height: 40px;
+    width: 75px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-project .upload {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(204, 204, 204);
+    width: 97%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px rgb(185, 185, 185);;
+  }
+
+  .img-project label img {
+    width: 25px;
+  }
+
+  .container-1 .container-form .btn-project button {
+    padding: 7px 30px;
+    font-size: 17px;
+    background: rgb(17,23,39);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    float: right;
+  }
+  
+  .container-1 .container-form .btn-project button:hover {
+    background-color: black;
+  }
+
+
+  /* === LIST PROJECT === */
+  .container-2 h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .list-project {
+    /* background-color: red; */
+    width: 1030px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project-list-item {
+    margin: 20px;
+    width: 300px;
+    height: 430px;
+    box-shadow: 0px 5px 20px rgb(216, 216, 216);
+    border: 0.2px solid rgb(216, 216, 216);
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .list-project .project-list-item a {
+    text-decoration: none;
+  }
+
+  .project-list-item .card-img {
+    width: 280px;
+    height: 200px;
+    margin: 10px auto;
+  }
+
+  .project-list-item .card-img img {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+  }
+
+  .project-list-item .card-title {
+    padding-left: 10px;
+    margin-top: -30px;
+    font-size: 14px;
+  }
+
+  .project-list-item .card-drt {
+    color: rgb(156, 156, 156);
+    padding-left: 10px;
+  }
+
+  .project-list-item .card-desc {
+    margin-top: 12px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    height: 70px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .project-list-item .card-icon img {
+    width: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  .project-list-item .card-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-top: 20px;
+  }
+
+  .project-list-item .card-btn button {
+    width: 140px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 0, 20);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 2px;
+  }
+
+
+  /* === PROJECT DETAIL === */
+.page {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  width: 1000px auto;
+}
+
+.page .title-page h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.detail-page {
+  display: flex;
+  margin-top: 40px;
+}
+
+.img-page {
+  justify-content: flex-start;
+}
+
+.img-page img {
+  width: 650px;
+}
+
+.detail-info-page {
+  width: 500px;
+  margin-left: 110px;
+}
+
+.detail-info-page h3 {
+  font-weight: 600;
+}
+
+.drt-info img {
+  width: 25px;
+}
+
+.drt-info label {
+  color: gray;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.drt-info div {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.detail-info-page #myparaf {
+  margin-top: 40px;
+  margin-bottom: -10px;
+  font-weight: 600;
+}
+
+.tech-info {
+  /* background-color: red; */
+  margin-top: 20px;
+  display: flex;
+}
+
+.tech-info img {
+  width: 25px;
+}
+
+.tech-info label {
+  color: gray;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.tech-info .left-info div {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.tech-info .right-info div {
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  /* justify-content: left; */
+  /* margin-top: 3px; */
+  margin-left: 25px;
+  padding: 6.4px;
+}
+
+.desc-page {
+  margin-top: 60px;
+}
+
+.desc-page p {
+  text-align: justify;
+}
+

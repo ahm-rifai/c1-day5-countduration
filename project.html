@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="assets/CSS/style-2.css">
+
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left-side">
+            <a href="index.html"><img src="assets/IMG/logo.png" alt="logo dumbways"></a>
+            <ul>
+                <li><a class="list-active" href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+
+    <!-- FORM PROJECT -->
+
+    <section class="container-1">
+        <div class="container-form">
+            <form onsubmit="addProject(event)">
+                <h1>ADD MY PROJECT</h1>
+            
+                <div class="title-project">
+                    <label for="input-project">Project Name</label>
+                    <input id="input-project" type="text" required>
+                </div>
+
+                <div class="date-project">
+                    <div class="start-date">
+                        <label for="input-start">Start Date</label>
+                        <input id="input-start" type="date" required>
+                    </div>
+                    <div class="end-date">
+                        <label for="input-end">End Date</label>
+                        <input id="input-end" type="date" required>
+                    </div>
+                </div>
+
+                <div class="desc-project">
+                    <label for="input-desc">Description</label>
+                    <textarea id="input-desc"></textarea>
+                </div>
+
+                <div class="tech-project">
+                    <label for="check-box-detail">Technologies</label>
+                    <div class="left-checkbox">
+                        <div>
+                            <input id="node" type="checkbox" value="node">
+                            <label for="node">Node JS</label>
+                        </div>
+                        <div>
+                            <input id="react" type="checkbox" value="react">
+                            <label for="react">React JS</label>
+                        </div>
+                    </div>
+                    <div class="right-checkbox">
+                        <div>
+                            <input id="next" type="checkbox" value="next">
+                            <label for="next">Next JS</label>
+                        </div>
+                        <div>
+                            <input id="type" type="checkbox" value="type">
+                            <label for="type">TypeScript</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-project">
+                    <label for="">Upload Image</label>
+                    <label for="input-img" class="upload">
+                        <p>choose</p>
+                        <img src="assets/IMG/file.png">
+                        <input id="input-img" type="file" hidden>
+                    </label>
+                </div>
+
+                <div class="btn-project">
+                    <button>submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <section class="container-2">
+        <h1>MY PROJECT</h1>
+        
+        <div class="list-project" id="list-myproject">
+
+            <div class="project-list-item">
+                <a href="project-detail.html">
+
+                    <div class="card-img">
+                        <img src="assets/IMG/mobile1.png">
+                    </div>
+
+                    <div class="card-title">
+                        <h3>Grow Your Business With Mobile</h3>
+                    </div>
+
+                    <div class="card-drt">
+                        <p>durasi 3 bulan</p>
+                    </div>
+
+                    <div class="card-desc">
+                        <p>mobile app proses pengembangan aplikasi yang dibuat untuk perangkat genggam, atau yang lebih dikenal dengan smartphone.</p>
+                    </div>
+
+                    <div class="card-icon">
+                        <img src="assets/IMG/nodejs.png"/>
+                        <img src="assets/IMG/react.png"/>
+                        <img src="assets/IMG/nextjs.png"/>
+                        <img src="assets/IMG/typescript.png"/>
+                    </div>
+
+                </a>
+
+                <div class="card-btn">
+                    <div class="edit-btn">
+                        <button>edit</button>
+                    </div>
+                    <div class="del-btn">
+                        <button>delete</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-list-item">
+                <a href="project-detail.html">
+
+                    <div class="card-img">
+                        <img src="assets/IMG/mobile2.png">
+                    </div>
+
+                    <div class="card-title">
+                        <h3>Grow Your Business With Mobile</h3>
+                    </div>
+
+                    <div class="card-drt">
+                        <p>durasi 3 bulan</p>
+                    </div>
+
+                    <div class="card-desc">
+                        <p>mobile app proses pengembangan aplikasi yang dibuat untuk perangkat genggam, atau yang lebih dikenal dengan smartphone.</p>
+                    </div>
+
+                    <div class="card-icon">
+                        <img src="assets/IMG/nodejs.png"/>
+                        <img src="assets/IMG/react.png"/>
+                        <img src="assets/IMG/nextjs.png"/>
+                        <img src="assets/IMG/typescript.png"/>
+                    </div>
+
+                </a>
+
+                <div class="card-btn">
+                    <div class="edit-btn">
+                        <button>edit</button>
+                    </div>
+                    <div class="del-btn">
+                        <button>delete</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-list-item">
+                <a href="project-detail.html">
+
+                    <div class="card-img">
+                        <img src="assets/IMG/mobile3.png">
+                    </div>
+
+                    <div class="card-title">
+                        <h3>Grow Your Business With Mobile</h3>
+                    </div>
+
+                    <div class="card-drt">
+                        <p>durasi 3 bulan</p>
+                    </div>
+
+                    <div class="card-desc">
+                        <p>mobile app proses pengembangan aplikasi yang dibuat untuk perangkat genggam, atau yang lebih dikenal dengan smartphone.</p>
+                    </div>
+
+                    <div class="card-icon">
+                        <img src="assets/IMG/nodejs.png"/>
+                        <img src="assets/IMG/react.png"/>
+                        <img src="assets/IMG/nextjs.png"/>
+                        <img src="assets/IMG/typescript.png"/>
+                    </div>
+
+                </a>
+
+                <div class="card-btn">
+                    <div class="edit-btn">
+                        <button>edit</button>
+                    </div>
+                    <div class="del-btn">
+                        <button>delete</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-list-item">
+                <a href="project-detail.html">
+
+                    <div class="card-img">
+                        <img src="assets/IMG/mobile4.jpg">
+                    </div>
+
+                    <div class="card-title">
+                        <h3>Grow Your Business With Mobile</h3>
+                    </div>
+
+                    <div class="card-drt">
+                        <p>durasi 3 bulan</p>
+                    </div>
+
+                    <div class="card-desc">
+                        <p>mobile app proses pengembangan aplikasi yang dibuat untuk perangkat genggam, atau yang lebih dikenal dengan smartphone.</p>
+                    </div>
+
+                    <div class="card-icon">
+                        <img src="assets/IMG/nodejs.png"/>
+                        <img src="assets/IMG/react.png"/>
+                        <img src="assets/IMG/nextjs.png"/>
+                        <img src="assets/IMG/typescript.png"/>
+                    </div>
+
+                </a>
+
+                <div class="card-btn">
+                    <div class="edit-btn">
+                        <button>edit</button>
+                    </div>
+                    <div class="del-btn">
+                        <button>delete</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-list-item">
+                <a href="project-detail.html">
+
+                    <div class="card-img">
+                        <img src="assets/IMG/mobile5.jpg">
+                    </div>
+
+                    <div class="card-title">
+                        <h3>Grow Your Business With Mobile</h3>
+                    </div>
+
+                    <div class="card-drt">
+                        <p>durasi 3 bulan</p>
+                    </div>
+
+                    <div class="card-desc">
+                        <p>mobile app proses pengembangan aplikasi yang dibuat untuk perangkat genggam, atau yang lebih dikenal dengan smartphone.</p>
+                    </div>
+
+                    <div class="card-icon">
+                        <img src="assets/IMG/nodejs.png"/>
+                        <img src="assets/IMG/react.png"/>
+                        <img src="assets/IMG/nextjs.png"/>
+                        <img src="assets/IMG/typescript.png"/>
+                    </div>
+
+                </a>
+
+                <div class="card-btn">
+                    <div class="edit-btn">
+                        <button>edit</button>
+                    </div>
+                    <div class="del-btn">
+                        <button>delete</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- END FORM PROJECT -->
+
+
+
+    <!-- EXTERNAL JS -->
+    <script src="assets/JS/project.js"></script>
+</body>
+</html>

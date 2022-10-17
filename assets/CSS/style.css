@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
+
+  /* === NAVBAR === */
+  nav {
+    background: #f4f3f3;
+    display: flex;
+    height: 7vh;
+  }
+
+  nav div {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex: 50%;
+  }
+
+  nav .left-side {
+    /* background-color: yellow; */
+    padding-left: 90px;
+  }
+
+  nav .left-side a img {
+    display: flex;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin-left: 40px;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-left: 40px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav ul li a.list-active {
+    color: black;
+    font-weight: 700;
+  }
+
+  nav .right-side {
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+  }
+
+nav .right-side a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 14px;
+    background-color: #151d31;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+nav .right-side a:hover {
+    background-color: black;
+  }
+
+
+/* === CONTENT === */
+.container {
+    background-color: #E3E7EB;
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: #fff;
+    display: flex;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(189, 189, 189);
+    padding: 35px;
+}
+
+/* === LEFT TEKS === */
+.section-left {
+  /* background-color: yellow; */
+  flex: 60%;
+}
+
+.section-left h1 {
+text-align: justify;
+margin-top: 40px;
+}
+
+.section-left p {
+text-align: justify;
+margin-top: 20px;
+}
+
+
+
+button {
+padding: 8px 32px;
+background-color: #111727;
+color: white;
+border-radius: 32px;
+font-size: medium;
+/* margin-top: 20px; */
+cursor: pointer;
+border: none;
+}
+
+button:hover {
+background-color: black;
+}
+
+.download {
+display: flex;
+align-items: center;
+justify-content: left;
+margin-top: 40px;
+/* background-color: red; */
+}
+
+.download a{
+color: black;
+text-decoration: none;
+font-size: large;
+font-weight: 400;
+/* margin-top: 10px; */
+}
+
+.download .cv img {
+width: 25px;
+margin-left: 10px;
+float: right;
+}
+
+.cv {
+display: flex;
+margin-left: 20px;
+}
+
+.icon-sosmed {
+margin-top: 50px;
+}
+
+.icon-sosmed img {
+width: 45px;
+margin-right: 20px;
+}
+
+
+
+/* === RIGHT-CARD === */
+.section-right {
+    /* background-color: aqua; */
+    flex: 40%;
+}
+
+.card {
+  width: 350px;
+  background-color: white;
+  border-radius: 12px;
+  margin-left: 60px;
+  box-shadow: 0 0 30px rgb(189, 189, 189);;
+}
+
+.card img {
+  border-radius: 12px 12px 0 0;
+}
+
+.card h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.card p {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 24px;
+  font-weight: 500;
+  color: gray;
+}
+
+/* === FORM CONTACT === */
+.container-form {
+  background-color: #E4E7EA;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conatainer-form, form {
+  /* background-color: aqua; */
+  padding: 0px;
+}
+
+form div {
+  margin-top: 10px;
+}
+
+.container-form form label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-form form input,
+textarea, select {
+  background: rgb(255, 255, 255);
+  padding: 8px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5px;
+  /* margin-bottom: 20px; */
+  border-radius: 5px;
+  border: 1px solid rgb(224, 223, 223);
+  box-shadow: 0px 0px 15px rgb(194, 194, 194);
+  box-sizing: border-box;
+}z
+
+.container-form form textarea {
+  height: 70px;
+}
+
+.container-form form button {
+  padding: 7px 30px;
+  font-size: 17px;
+  background: rgb(17,23,39);
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  float: right;
+}
+
+
+/* === FORM MY PROJECT */
